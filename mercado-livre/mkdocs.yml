@@ -1,0 +1,25 @@
+site_name: My Data Engineering Docs
+site_description: Documentation on ETL, S3, and Airflow
+theme:
+  name: readthedocs
+nav:
+  - Home: index.md
+  - ETL:
+      - Introduction: etl/introduction.md
+      - Process: etl/process.md
+      - Best Practices: etl/best_practices.md
+  - S3:
+      - Overview: s3/overview.md
+  - Airflow:
+      - Overview: airflow/overview.md
+      - Setup: airflow/setup.md
+      - DAGs: airflow/dags.md
+
+markdown_extensions:
+  - toc:
+      permalink: true
+  - admonition
+  - codehilite
+
+plugins:
+  - search
